@@ -61,11 +61,45 @@
         <div class="modal-buttons">
           <button id="reset-yes">Yes</button>
           <button id="reset-no">No</button>
-        </div>
+        </div>n
       </div>
     </div>
 
+    <div id="mood-container">
+      <button id="mood-trigger">How are you feeling?</button>
+    
+      <div id="mood-picker" class="hidden">
+        <!--
+        <p>Select your mood:</p>
+        -->
+        <div id="mood-options">
+          <button class="mood-btn" data-mood="happy" title="Happy">😊</button>
+          <button class="mood-btn" data-mood="excited" title="Excited">🤩</button>
+          <button class="mood-btn" data-mood="neutral" title="Neutral">😐</button>
+          <button class="mood-btn" data-mood="sad" title="Sad">😔</button>
+          <button class="mood-btn" data-mood="stressed" title="Stressed">😣</button>
+          <button class="mood-btn" data-mood="surprised" title="Surprised">😮</button>
+          <button class="mood-btn" data-mood="angry" title="Angry">😠</button>
+          <button class="mood-btn" data-mood="tired" title="Tired">🥱</button>
+          <button class="mood-btn" data-mood="confused" title="Confused">😕</button>
+          <button class="mood-btn" data-mood="grateful" title="Grateful">😇</button>
+        </div>
+      </div>
+      
+      <button id="view-history-btn">📅 View Mood History</button>
+      <div id="mood-history" class="hidden"></div>
+
+    
+      <p id="mood-status"></p>
+    </div>
+    
+
+    <div id="quote-overlay"></div>
+
     <script src="scripts/Sortable.min.js"></script>
+    <script src="mood.js"></script>
     <script src="newTab.js"></script>
+    <script src="quote.js"></script>
+
   </body>
 </html>
